@@ -1,0 +1,23 @@
+{
+  "name": "go-where",
+  "version": "1.0.0",
+  "description": "使用 Vue + TypeScript 实现去哪网的移动端功能",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projects-platform/go-where.git"
+  },
+  "keywords": [
+    "vue",
+    "typescript"
+  ],
+  "author": "hvkcoder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/projects-platform/go-where/issues"
+  },
+  "homepage": "https://github.com/projects-platform/go-where#readme"
+}
