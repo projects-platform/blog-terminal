@@ -1,23 +1,26 @@
 {
-  "name": "go-where",
-  "version": "1.0.0",
-  "description": "使用 Vue + TypeScript 实现去哪网的移动端功能",
-  "main": "index.js",
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/projects-platform/go-where.git"
+  "hexo": {
+    "version": "4.1.1"
   },
-  "keywords": [
-    "vue",
-    "typescript"
-  ],
-  "author": "hvkcoder",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/projects-platform/go-where/issues"
-  },
-  "homepage": "https://github.com/projects-platform/go-where#readme"
+  "dependencies": {
+    "hexo": "^4.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-pug": "^1.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0"
+  }
 }
