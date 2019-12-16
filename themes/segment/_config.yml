@@ -1,4 +1,3 @@
-
 # html lang
 language: en
 
@@ -11,8 +10,10 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/segment.css
+  - https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css
+  - https://cdn.bootcss.com/highlight.js/9.15.9/styles/xcode.min.css
+  - /styles/segment.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/segment.js
+  -

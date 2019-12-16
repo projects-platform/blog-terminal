@@ -1,7 +1,9 @@
 extends includes/layout.pug
 
 block content
-  article#post
-    h1= page.title
-    != page.content
-  #paginator!= paginator()
+  #post
+    .main
+      h1.title=page.title
+      section.stuff
+        span=page.date.locale("zh-cn").format("MMMM DD, YYYY")
+      !=page.content
