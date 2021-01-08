@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // 用于指定浏览器版本号
+        "targets": {
+          "browsers": "last 2 version"
+				},
+				"useBuiltIns": "usage"
+      }
+    ]
+	],
+	"plugins": ["@babel/plugin-transform-runtime"]
+}

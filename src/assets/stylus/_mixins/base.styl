@@ -1,0 +1,70 @@
+
+bg($url = '')
+	background url($url) no-repeat 0 0
+	background-size cover
+/* ----- 定义宽高 ----- */
+wh($width = 0, $height = 0)
+	width $width
+	height $height
+/* ----- 元素居中 ----- */
+center()
+	position absolute
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
+/* ----- 元素上下居中 ----- */
+centerTop()
+	position absolute
+	top 50%
+	transform translateY(-50%)
+/* ----- 元素左右居中 ----- */
+centerLeft()
+	position absolute
+	left 50%
+	transform translateX(-50%)
+/* ----- 元素固定底部 ----- */
+fixed-bottom()
+	position fixed
+	bottom 0
+/* ----- 元素固定头部 ----- */
+fixed-top()
+	position fixed
+	top 0
+/* ----- 定义元素位置 ----- */
+def-position(top = 0, right = 0, bottom = 0, left = 0)
+	position absolute
+	top top
+	right right
+	bottom bottom
+	left left
+flex-column($flex = '1', $bg-color = '')
+	display flex
+	flex $flex
+	flex-direction column
+	height 100%
+	background ''
+/* ----- 自适应样式配置 ----- */
+mobile-smallest()
+	@media (max-width 413px)
+		{block}
+mobile-small()
+	@media (max-width 567px)
+		{block}
+mobile()
+	@media (max-width 767px)
+		{block}
+tablet-mobile()
+	@media (max-width 991px)
+		{block}
+tablet()
+	@media (min-width 768px) and (max-width 991px)
+		{block}
+desktop()
+	@media (min-width 992px)
+		{block}
+desktop-large()
+	@media (min-width 1200px)
+		{block}
+desktop-largest()
+	@media (min-width 1600px)
+		{block}

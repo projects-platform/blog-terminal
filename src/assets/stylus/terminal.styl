@@ -1,0 +1,63 @@
+@import '~@stylus/_mixins/base.styl'
+@import '~@stylus/iconfont.css'
+body ::selection
+	background-color #000
+	color #fff
+body
+	font-family Courier New, Consolas, monospace
+	font-size 17px
+	color #000
+	background-color #fff
+	padding 5px
+	margin 0
+#main
+	line-height 23px
+	word-wrap break-word
+	position relative
+.input-lable
+	position absolute
+	top 100%
+	left 0
+	z-index 1
+	width 100%
+.input-lable, .input-lable span
+	word-break break-all !important
+#usr
+	color rgb(193, 54, 70)
+.host
+	color rgb(60, 187, 198)
+	cursor pointer
+	text-decoration none
+.content
+	display inline-block
+	width 100%
+	word-break break-all
+.input-text, .input-text *
+	background-color transparent !important
+	font-size 17px !important
+	font-family Cutive Mono, Courier New, Consolas, monospace !important
+	word-break break-all !important
+	color #000 !important
+.input-text
+	border none !important
+	-moz-appearance none !important
+	-webkit-appearance none !important
+	outline 0 !important
+	box-sizing border-box !important
+	padding-right 45px
+.folder-container
+	display flex
+	flex-flow row wrap
+	align-content flex-start
+.folder
+	flex 0 0 20%
+	color rgb(83, 58, 221)
+	box-sizing border-box
+	+tablet-mobile()
+		flex 0 0 33%
+	+mobile-small()
+		flex 0 0 50%
+	+mobile-smallest()
+		flex 100%
+.error
+	color rgb(193, 57, 40) !important
